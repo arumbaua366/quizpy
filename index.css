@@ -1,0 +1,14 @@
+:root {
+  background-color: #fdefe8;
+  font-size: 70.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
