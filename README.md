@@ -22,7 +22,7 @@ Add image or gif
 
 ## Credits
 * wes bos
-* jessywlee
+* james quick - Udemy
 * AykutSarac
 
 ## Links

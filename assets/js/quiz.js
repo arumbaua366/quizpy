@@ -50,8 +50,8 @@ fetch(
     console.error(err);
   });
 
-const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+  const MAX_QUESTIONS = 10;
+  const CORRECT_BONUS = 10;
 
 startGame = () => {
   questionCounter = 0;
