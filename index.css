@@ -1,3 +1,7 @@
+/* import styling from quiz.css and scores.css */
+@import "assets/css/quiz.css";
+@import "assets/css/scores.css";
+
 :root {
   background-image: url("assets/img/cashews.jpg");
   background-size: cover;
@@ -22,7 +26,7 @@ h4 {
 
 h1 {
   font-size: 5.4rem;
-  color: #713b25;
+  color: #333;
   margin-bottom: 5rem;
 }
 
