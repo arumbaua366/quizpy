@@ -50,14 +50,8 @@ fetch(
     console.error(err);
   });
 
-<<<<<<< HEAD
   const MAX_QUESTIONS = 10;
   const CORRECT_BONUS = 10;
-=======
-// constants  
-const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
->>>>>>> working
 
 startGame = () => {
   questionCounter = 0;
@@ -75,10 +69,8 @@ getNewQuestion = () => {
 
     return window.location.assign("end.html"); 
   }
-
   questionCounter++;
   progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-
   
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
@@ -90,15 +82,10 @@ getNewQuestion = () => {
   choices.forEach((choice) => {
     const number = choice.dataset["number"];
     choice.innerHTML = currentQuestion["choice" + number]; // gets choice property, gets data attribute number associated with it, and use it to get appropriate choice. innerHTML displays choices.
-
   });
-
   availableQuestions.splice(questionIndex, 1); // get rid of question that was already used.
-
-
   acceptingAnswers = true;
 };
-
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
@@ -115,12 +102,10 @@ choices.forEach((choice) => {
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
     }
-
     selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
-     
       getNewQuestion();
     }, 500);
   });
