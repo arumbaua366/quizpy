@@ -20,7 +20,7 @@ fetch(
     return res.json();
 
   })
-  .then((loadedQuestions) => {
+  .then( loadedQuestions => {
     questions = loadedQuestions.results.map((loadedQuestion) => {
       const formattedQuestion = {
         question: loadedQuestion.question,
@@ -50,13 +50,14 @@ fetch(
     console.error(err);
   });
 
+// constants  
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
 
 startGame = () => {
   questionCounter = 0;
   score = 0;
-  availableQuestions = [...questions]; //why??
+  availableQuestions = [...questions]; // spread operator - take questions array, spread out items and put them in new array (availableQuestions)
 
   getNewQuestion();
   game.classList.remove("hidden");
@@ -76,17 +77,18 @@ getNewQuestion = () => {
   
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  currentQuestion = availableQuestions[questionIndex];
-  question.innerHTML = currentQuestion.question;
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length); // an index of all available questions. once that is displayed, this shows all available questions minus previous one and so forth until all questions are displayed (no repeats)
+  currentQuestion = availableQuestions[questionIndex]; // displays current question - refers to questionIndex
+  question.innerHTML = currentQuestion.question; // displays the text of the question in the window
+  
 
   choices.forEach((choice) => {
     const number = choice.dataset["number"];
-    choice.innerHTML = currentQuestion["choice" + number];
+    choice.innerHTML = currentQuestion["choice" + number]; // gets choice property, gets data attribute number associated with it, and use it to get appropriate choice. innerHTML displays choices.
 
   });
 
-  availableQuestions.splice(questionIndex, 1);
+  availableQuestions.splice(questionIndex, 1); // get rid of question that was already used.
 
 
   acceptingAnswers = true;
