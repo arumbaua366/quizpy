@@ -1,19 +1,18 @@
 # Quizpy - An Open Trivia Game
-*
-
-Add image or gif
 
 ## About
-* A fun game using the Open Trivia API
+* A fun game using the Open Trivia API. This game was created to work with loops and APIs.
 
 ### Features
+* A simple home page that contains a start button and high scores button. 
+![](https://thumbs.gfycat.com/CalculatingSnarlingAmurminnow-size_restricted.gif)
 * 10 medium difficulty, multiple choice questions about animals.
-* Scoreboard that features the top high scores.
+* Scoreboard that features the top high scores. Once you save your username, the game restarts but you can view your score and any previous scores by clicking "high score" on the main page.
+![](https://thumbs.gfycat.com/ChillyEsteemedAdouri-size_restricted.gif)
 * A fun background courtesy of Pexels.
 
 ## Technologies
 * JavaScript
-* React??
 * HTML
 * CSS
 
@@ -21,12 +20,11 @@ Add image or gif
 * MIT
 
 ## Credits
-* wes bos
-* james quick - Udemy
-* AykutSarac
+* Wes Bos
+* James Quick - Udemy
 
 ## Links
-* Website
+* [Deployed Site](https://quizpy.netlify.app)
 
 ## Future Developments
-* IDUNNOOO
+* Refactor in React
