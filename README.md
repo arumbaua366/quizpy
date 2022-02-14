@@ -15,6 +15,8 @@
 * JavaScript
 * HTML
 * CSS
+* Open Trivia API
+* Netlify for deployment
 
 ## License
 * MIT
@@ -23,8 +25,9 @@
 * Wes Bos
 * James Quick - Udemy
 
-## Links
+## Link
 * [Deployed Site](https://quizpy.netlify.app)
 
 ## Future Developments
 * Refactor in React
+* Add music?
